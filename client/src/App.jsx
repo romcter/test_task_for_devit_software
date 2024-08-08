@@ -19,7 +19,7 @@ function App() {
       if (activeRequests < limit) {
         activeRequests++;
         try {
-          const response = await axios.get(`/api?index=${i}`);
+          const response = await axios.get(`http://localhost:5000/api?index=${i}`);
           setResults((prevResults) => [...prevResults, response.data.index]);
         } catch (error) {
           console.error(error);
@@ -35,6 +35,7 @@ function App() {
     for (let i = 0; i < limit; i++) {
       sendRequest(index++);
     }
+    setIsFetching(!isFetching)
   };
 
   return (
