@@ -11,3 +11,5 @@ Implement client-server data fetch logic by following the next steps:
 3. Client-side JS should render the results of server responses (request indexes) to one list immediately after each response
 
 You can choose any technology stack that you will use to implement the logic.
+
+[![Watch the video](img.png)](https://youtu.be/JjE1tR5LGfg?si=z7oBihHIM7A_DwRw)
